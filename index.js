@@ -6,7 +6,8 @@ const app = express();
 // TODO - Graphql MiddelWare
 
 app.use('/graphql', graphqlHTTP({
-    schema
+    schema,
+    graphiql: true
 }));
 
 
