@@ -1,5 +1,5 @@
 {
-  "name": "graphql",
+  "name": "G_Server",
   "version": "1.0.0",
   "description": "graphql server",
   "main": "index.js",
@@ -9,11 +9,12 @@
   },
   "author": "Manikant Singh",
   "license": "MIT",
-  "devDependencies": {
-     
-  },
+  "devDependencies": {},
   "dependencies": {
     "expres": "0.0.5",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.3.0",
+    "loadash": "^1.0.0",
     "nodemon": "^2.0.6"
   }
 }
