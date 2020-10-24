@@ -1,0 +1,15 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "description": "graphql server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manikant Singh",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.12.0",
+    "eslint-plugin-react": "^7.21.5"
+  }
+}
