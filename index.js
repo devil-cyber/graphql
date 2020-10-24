@@ -1,6 +1,7 @@
 const express = require('express');
 const { graphqlHTTP } = require('express-graphql')
 const schema = require('./schema/schema');
+const db = require('./config/mongoose')
 const app = express();
 
 // TODO - Graphql MiddelWare
