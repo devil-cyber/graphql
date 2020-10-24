@@ -1,7 +1,10 @@
 const express = require('express');
-const { graphqlHTTP } = require('express-graphql')
+const {
+    graphqlHTTP
+} = require('express-graphql')
 const schema = require('./schema/schema');
-const db = require('./config/mongoose')
+const db = require('./config/mongoose');
+const dotenv = require('dotenv').config();
 const app = express();
 
 // TODO - Graphql MiddelWare
@@ -13,9 +16,9 @@ app.use('/graphql', graphqlHTTP({
 
 
 // TODO - Listen server at specific port
-app.listen(4000, (_err) => {
+app.listen(process.env.PORT, (_err) => {
     if (_err) {
         console.log(_err.message)
     }
-    console.log('Listining at port 4000');
+    console.log('Listining at port', process.env.PORT);
 })

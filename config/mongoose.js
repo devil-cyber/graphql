@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://mani:mani360@@cluster0.lvrjg.mongodb.net/library?retryWrites=true&w=majority', {
+const dotenv = require('dotenv').config()
+
+mongoose.connect(process.env.URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
